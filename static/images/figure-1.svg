@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Figure Placeholder</title>
+  <desc id="desc">A placeholder for a project result figure.</desc>
+  <rect width="900" height="600" fill="#f2f4f7"/>
+  <rect x="90" y="90" width="720" height="360" rx="18" fill="#d9dee7"/>
+  <path d="M150 390L305 260L430 340L555 205L750 390Z" fill="#b9c4d4"/>
+  <text x="450" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#4a5568">Replace with Figure 1</text>
+</svg>

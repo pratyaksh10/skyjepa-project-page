@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Additional Figure Placeholder</title>
+  <desc id="desc">A placeholder for an additional project figure.</desc>
+  <rect width="1280" height="720" fill="#f2f4f7"/>
+  <rect x="100" y="120" width="300" height="420" rx="16" fill="#d9dee7"/>
+  <rect x="490" y="120" width="300" height="420" rx="16" fill="#c7d0de"/>
+  <rect x="880" y="120" width="300" height="420" rx="16" fill="#d9dee7"/>
+  <text x="640" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#4a5568">Replace with an additional figure</text>
+</svg>

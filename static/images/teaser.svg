@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Teaser Figure Placeholder</title>
+  <desc id="desc">A placeholder for the main project teaser image.</desc>
+  <rect width="1280" height="720" fill="#f2f4f7"/>
+  <path d="M80 560L330 330L520 470L720 250L1200 560Z" fill="#d9dee7"/>
+  <circle cx="980" cy="190" r="72" fill="#c7d0de"/>
+  <text x="640" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#4a5568">Replace with your teaser figure</text>
+</svg>

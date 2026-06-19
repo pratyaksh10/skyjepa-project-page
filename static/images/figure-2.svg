@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Gif Placeholder</title>
+  <desc id="desc">A placeholder for a project gif or animation.</desc>
+  <rect width="900" height="600" fill="#f2f4f7"/>
+  <circle cx="450" cy="260" r="125" fill="#d9dee7"/>
+  <path d="M420 195L535 260L420 325Z" fill="#6b778c"/>
+  <text x="450" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#4a5568">Replace with your GIF</text>
+</svg>

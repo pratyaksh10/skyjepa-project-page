@@ -1,16 +1,18 @@
-# Nerfies
+# SkyJEPA Project Page
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This repository contains the static project website for:
 
-If you find Nerfies useful for your work please cite:
-```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
-```
+**SkyJEPA: Learning Long-Horizon World Models for Zero-Shot Sim-to-Real Control of Quadrotors**
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+## Editing Content
+
+- Update the arXiv URL in `index.html` once the paper page is available.
+- Replace the placeholder media in `static/images/` with your own figures or gifs.
+- If you use different filenames, update the matching `src` attributes in `index.html`.
+
+## Current Media Slots
+
+- `static/images/teaser.svg` - main teaser figure.
+- `static/images/figure-1.svg` - first project figure.
+- `static/images/figure-2.svg` - gif or animation slot.
+- `static/images/figure-3.svg` - additional result figure.
