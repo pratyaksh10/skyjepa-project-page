@@ -90,28 +90,34 @@
     <div class="hero-body">
       <div class="gif-grid">
         <figure class="publication-figure">
-          <video autoplay muted loop playsinline preload="metadata"
-                 aria-label="Quadrotor flight without payload, experiment 1.">
-            <source src="./static/videos/drone_flight_no_payload_02_cropped.mp4"
-                    type="video/mp4">
-          </video>
           <figcaption>Trajectory Tracking</figcaption>
+          <div class="hero-video-frame">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Quadrotor flight without payload, experiment 1.">
+              <source src="./static/videos/drone_flight_no_payload_02_cropped.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </figure>
         <figure class="publication-figure">
-          <video autoplay muted loop playsinline preload="metadata"
-                 aria-label="Quadrotor flight with payload, experiment 1.">
-            <source src="./static/videos/drone_flight_no_payload_01_cropped.mp4"
-                    type="video/mp4">
-          </video>
           <figcaption>Propeller Switching</figcaption>
+          <div class="hero-video-frame">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Quadrotor flight with payload, experiment 1.">
+              <source src="./static/videos/drone_flight_no_payload_01_cropped.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </figure>
-        <figure class="publication-figure">
-          <video autoplay muted loop playsinline preload="metadata"
-                 aria-label="Quadrotor flight with payload, experiment 2.">
-            <source src="./static/videos/drone_flight_payload_02_cropped.mp4"
-                    type="video/mp4">
-          </video>
+        <figure class="publication-figure payload-hero">
           <figcaption>Payload</figcaption>
+          <div class="hero-video-frame">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Quadrotor flight with payload, experiment 2.">
+              <source src="./static/videos/drone_flight_payload_02_cropped.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </figure>
       </div>
       <h2 class="subtitle has-text-centered">
@@ -161,6 +167,11 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Methodology</h2>
     <div class="feature-card">
+      <figure class="publication-figure">
+        <img src="./static/images/overview.png"
+             alt="Overview of the SkyJEPA framework.">
+        <figcaption>Overview of the proposed SkyJEPA framework.</figcaption>
+      </figure>
       <div class="feature-copy">
         <h3>JEPA-style latent dynamics for real-time control</h3>
         <p>
@@ -172,11 +183,6 @@
           sampling-based controller for real-time zero-shot sim-to-real flight.
         </p>
       </div>
-      <figure class="publication-figure">
-        <img src="./static/images/overview.png"
-             alt="Overview of the SkyJEPA framework.">
-        <figcaption>Overview of the proposed SkyJEPA framework.</figcaption>
-      </figure>
     </div>
   </div>
 </section>
@@ -185,6 +191,75 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Main Results</h2>
     <div class="result-grid">
+      <article class="result-card">
+        <h3>Tracking Visualization</h3>
+        <p>SkyJEPA supports real-world closed-loop tracking across nominal flight, propeller switching, and payload settings.</p>
+        <div class="compact-gif-grid result-visual-grid">
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Trajectory tracking experiment.">
+              <source src="./static/videos/fish_tracking.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Trajectory tracking</figcaption>
+          </figure>
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Propeller switching tracking experiment.">
+              <source src="./static/videos/Propeller%20Switching_tracking.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Propeller switching</figcaption>
+          </figure>
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Payload tracking experiment.">
+              <source src="./static/videos/Payload_tracking.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Payload tracking</figcaption>
+          </figure>
+        </div>
+      </article>
+      <article class="result-card">
+        <h3>MPPI Rollout Visualization</h3>
+        <p>Sampling-based control rollouts remain consistent across trajectory tracking, propeller switching, and payload conditions.</p>
+        <div class="compact-gif-grid result-visual-grid">
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Trajectory MPPI rollouts.">
+              <source src="./static/videos/fish_mppi_rollouts.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Trajectory MPPI rollout</figcaption>
+          </figure>
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Propeller switching MPPI rollouts.">
+              <source src="./static/videos/Propeller%20Switching_mppi_rollouts.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Propeller switching MPPI rollout</figcaption>
+          </figure>
+          <figure class="publication-figure">
+            <video autoplay muted loop playsinline preload="metadata"
+                   aria-label="Payload MPPI rollouts.">
+              <source src="./static/videos/Payload_mppi_rollouts.mp4"
+                      type="video/mp4">
+            </video>
+            <figcaption>Payload MPPI rollout</figcaption>
+          </figure>
+        </div>
+      </article>
+      <article class="result-card">
+        <h3>Zero-Shot Sim-to-Real</h3>
+        <p>Diverse domain-randomized simulation data is sufficient for reliable deployment in real outdoor flights.</p>
+        <video autoplay muted loop playsinline preload="metadata"
+               aria-label="State distribution PCA revealing simulation coverage for quadrotor deployment.">
+          <source src="./static/videos/state_distribution_pca_reveal_quadrotor.mp4"
+                  type="video/mp4">
+        </video>
+      </article>
       <article class="result-card">
         <h3>Less Compounding Error</h3>
         <p>Latent-space dynamics modeling improves long-horizon prediction over direct predictive modeling.</p>
@@ -203,71 +278,6 @@
         <img src="./static/images/pose_rmse_vs_noise_distribution_preview.png"
              alt="Pose RMSE under input noise.">
       </article>
-      <article class="result-card">
-        <h3>Zero-Shot Sim-to-Real</h3>
-        <p>Diverse domain-randomized simulation data is sufficient for reliable deployment in real outdoor flights.</p>
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="State distribution PCA revealing simulation coverage for quadrotor deployment.">
-          <source src="./static/videos/state_distribution_pca_reveal_quadrotor.mp4"
-                  type="video/mp4">
-        </video>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Additional Results</h2>
-    <div class="compact-gif-grid">
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Trajectory tracking experiment.">
-          <source src="./static/videos/fish_tracking.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Trajectory tracking</figcaption>
-      </figure>
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Propeller switching tracking experiment.">
-          <source src="./static/videos/Propeller%20Switching_tracking.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Propeller switching tracking</figcaption>
-      </figure>
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Payload tracking experiment.">
-          <source src="./static/videos/Payload_tracking.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Payload tracking</figcaption>
-      </figure>
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Trajectory MPPI rollouts.">
-          <source src="./static/videos/fish_mppi_rollouts.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Trajectory MPPI rollout</figcaption>
-      </figure>
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Propeller switching MPPI rollouts.">
-          <source src="./static/videos/Propeller%20Switching_mppi_rollouts.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Propeller switching MPPI rollout</figcaption>
-      </figure>
-      <figure class="publication-figure">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Payload MPPI rollouts.">
-          <source src="./static/videos/Payload_mppi_rollouts.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Payload MPPI rollout</figcaption>
-      </figure>
     </div>
   </div>
 </section>
