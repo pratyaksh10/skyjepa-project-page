@@ -60,7 +60,9 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/0000.00000"
+                <a href="https://arxiv.org/pdf/2606.23444"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -70,6 +72,8 @@
               </span>
               <span class="link-block">
                 <a href="https://github.com/arplaboratory/SkyJEPA.git"
+                   target="_blank"
+                   rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -178,6 +182,15 @@
           SkyJEPA learns a latent dynamics model with a physics-inspired prober that maps abstract
           embeddings to physically meaningful states for stable long-horizon quadrotor prediction.
         </p>
+        <p>
+          The resulting quadrotor world model is designed around four desirable properties:
+        </p>
+        <ul class="property-list">
+          <li><strong>Accurate long-horizon prediction</strong></li>
+          <li><strong>Interpretable latent state</strong></li>
+          <li><strong>Real-time inference for closed-loop control</strong></li>
+          <li><strong>Zero-shot task generalization</strong></li>
+        </ul>
         <p>
           The model is trained entirely on domain-randomized simulation data, then deployed inside a
           sampling-based controller for real-time zero-shot sim-to-real flight.
